@@ -28,7 +28,7 @@ class CategoryGridItem extends StatelessWidget {
           category.title,
           style: Theme.of(context)
               .textTheme
-              .titleLarge!
+              .titleMedium!
               .copyWith(color: Theme.of(context).colorScheme.onBackground),
         ),
       ),

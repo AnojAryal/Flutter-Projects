@@ -9,7 +9,7 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pick Your Ctaegory'),
+        title: const Text('Pick Your Category'),
       ),
       body: GridView(
         padding:const EdgeInsets.all(24),
