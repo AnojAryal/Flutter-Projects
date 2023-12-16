@@ -3,6 +3,7 @@ import 'package:meals_app/screens/categories.dart';
 import 'package:meals_app/screens/meals.dart';
 
 import '../models/meal.dart';
+import '../widgets/main_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   const TabsScreen({super.key});
@@ -37,7 +38,7 @@ class _TabsScreenState extends State<TabsScreen> {
     } else {
       setState(() {
         _favoriteMeals.add(meal);
-        _showInfoMessage('Added to facorite');
+        _showInfoMessage('Added to favorite');
       });
     }
   }
@@ -65,6 +66,7 @@ class _TabsScreenState extends State<TabsScreen> {
 
     return Scaffold(
       appBar: AppBar(title: Text(activePageTitle)),
+      drawer: const MainDrawer(),
       body: activePage,
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
