@@ -6,6 +6,13 @@ import 'package:meals_app/screens/meals.dart';
 import '../models/meal.dart';
 import '../widgets/main_drawer.dart';
 
+const kInitialFilters = {
+    Filter.glutenFree :false,
+    Filter.lactosFree :false,
+    Filter.vegan : false,
+    Filter.vegetarian : false,
+  };
+
 class TabsScreen extends StatefulWidget {
   const TabsScreen({super.key});
 
@@ -18,6 +25,7 @@ class TabsScreen extends StatefulWidget {
 class _TabsScreenState extends State<TabsScreen> {
   int _selectedPageIndex = 0;
   final List<Meal> _favoriteMeals = [];
+  Map<Filter , bool> _selectedFilters = kInitialFilters;
 
   void _showInfoMessage(String message) {
     ScaffoldMessenger.of(context).clearSnackBars();
@@ -58,7 +66,10 @@ class _TabsScreenState extends State<TabsScreen> {
           builder: (ctx) => const FiltersScreen(),
         ),
       );
-      print(result);
+      setState(() {
+         _selectedFilters = result ?? kInitialFilters;
+      });
+     
     } 
   }
 
