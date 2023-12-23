@@ -3,6 +3,7 @@ import 'package:meals_app/screens/categories.dart';
 import 'package:meals_app/screens/filters.dart';
 import 'package:meals_app/screens/meals.dart';
 
+import '../data/dummy_data.dart';
 import '../models/meal.dart';
 import '../widgets/main_drawer.dart';
 
@@ -75,6 +76,22 @@ class _TabsScreenState extends State<TabsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final availableMeals = dummyMeals.where((meal) {
+      if(_selectedFilters[Filter.glutenFree]! && !meal.isGlutenFree){
+        return false; 
+      }
+      if(_selectedFilters[Filter.lactosFree]! && !meal.isLactoseFree){
+        return false; 
+      }
+      if(_selectedFilters[Filter.vegan]! && !meal.isVegan){
+        return false; 
+      }
+      if(_selectedFilters[Filter.vegetarian]! && !meal.isVegetarian){
+        return false; 
+      }
+      return true;
+    }).toList();
+
     Widget activePage = CategoriesScreen(
       onToggleFavorites: _toggleMealFavoriteStatus,
     );
