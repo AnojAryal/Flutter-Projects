@@ -64,7 +64,7 @@ class _TabsScreenState extends State<TabsScreen> {
     if (identifier == 'filters') {
       final result = await Navigator.of(context).push<Map<Filter, bool>>(
         MaterialPageRoute(
-          builder: (ctx) => const FiltersScreen(),
+          builder: (ctx) =>FiltersScreen(currentFilters: _selectedFilters,),
         ),
       );
       setState(() {
@@ -89,11 +89,12 @@ class _TabsScreenState extends State<TabsScreen> {
       if(_selectedFilters[Filter.vegetarian]! && !meal.isVegetarian){
         return false; 
       }
-      return true;
+      return true; 
     }).toList();
 
     Widget activePage = CategoriesScreen(
       onToggleFavorites: _toggleMealFavoriteStatus,
+      availableMeals: availableMeals,
     );
     var activePageTitle = 'Categories';
 
