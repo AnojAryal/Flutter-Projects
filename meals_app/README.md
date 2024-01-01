@@ -1,6 +1,6 @@
 # meals_app
 
-A new Flutter project.
+Creating Meals-app
 
 ## Getting Started
 
@@ -13,3 +13,8 @@ A new Flutter project.
 
 1) Making things less complex
 2) The 'Riverpod' package
+3) Creating and using a provider
+4) Creating more complex provider with ststeNotifier method
+5) Trigerring a notifier method
+6) Combining local and provider managed state
+7) Outsourcing state into the provider
