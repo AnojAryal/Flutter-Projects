@@ -18,3 +18,11 @@ Creating Meals-app
 5) Trigerring a notifier method
 6) Combining local and provider managed state
 7) Outsourcing state into the provider
+
+## Animations
+
+Making things move
+
+1) Exclipt vs Implict Animations
+2) Building a Custom Animation
+3) Using Built-in Animations Widgets
