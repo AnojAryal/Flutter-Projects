@@ -32,6 +32,8 @@ class _CategoriesScreenState extends State<CategoriesScreen>
       lowerBound: 0,
       upperBound: 1,
     );
+
+    _animationController.forward();
   }
 
   @override
@@ -80,7 +82,7 @@ class _CategoriesScreenState extends State<CategoriesScreen>
       ),
       builder: (context, child) => Padding(
           padding: EdgeInsets.only(
-            top: _animationController.value * 100,
+            top:100 - _animationController.value * 100,
           ),
           child: child),
     );
