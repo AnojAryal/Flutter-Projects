@@ -23,6 +23,6 @@ Creating Meals-app
 
 Making things move
 
-1) Exclipt vs Implict Animations
+1) Explicit vs Implict Animations
 2) Building a Custom Animation
 3) Using Built-in Animations Widgets
