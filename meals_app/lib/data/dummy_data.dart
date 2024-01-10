@@ -494,4 +494,33 @@ const dummyMeals = [
     isVegetarian: false,
     isLactoseFree: true,
   ),
+  Meal(
+  id: 'm13',
+  categories: [
+    'c6',
+  ],
+  title: 'Grilled Steak',
+  affordability: Affordability.expensive,
+  complexity: Complexity.medium,
+  imageUrl: 'https://source.unsplash.com/800x600/?grilled-steak',
+  duration: 25,
+  ingredients: [
+    '2 steaks (your choice of cut)',
+    'Salt and pepper to taste',
+    '2 tablespoons olive oil',
+    '2 cloves garlic, minced',
+    '1 teaspoon dried thyme',
+  ],
+  steps: [
+    'Preheat the grill or a grill pan over medium-high heat.',
+    'Season the steaks with salt, pepper, and dried thyme.',
+    'Rub the steaks with olive oil and minced garlic.',
+    'Grill the steaks for about 4-5 minutes per side for medium-rare, or adjust to your desired doneness.',
+    'Remove from the grill and let them rest for a few minutes before serving.',
+  ],
+  isGlutenFree: true,
+  isVegan: false,
+  isVegetarian: false,
+  isLactoseFree: true,
+),
 ];
