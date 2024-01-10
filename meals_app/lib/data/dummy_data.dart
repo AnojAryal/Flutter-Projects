@@ -502,7 +502,7 @@ const dummyMeals = [
   title: 'Grilled Steak',
   affordability: Affordability.expensive,
   complexity: Complexity.medium,
-  imageUrl: 'https://source.unsplash.com/800x600/?grilled-steak',
+  imageUrl: 'https://placekitten.com/800/600',
   duration: 25,
   ingredients: [
     '2 steaks (your choice of cut)',
