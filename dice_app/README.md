@@ -1,6 +1,6 @@
 # dice_app
 
-creating simple dice game app with flutter
+learning flutter basics. creating simple dice game app with flutter
 
 ## In this project
 
