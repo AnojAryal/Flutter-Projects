@@ -2,7 +2,7 @@
 
 creating a simple dice game app with flutter
 
-## Getting Started with flutter
+## Getting Started
 
 1) Flutter and dart fundamentala
 2) Basic syntax and features
